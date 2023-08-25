@@ -1,0 +1,78 @@
+@use 'variables' as v;
+@use 'mixins' as m;
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url('/src/images/bg-intro-mobile.png'), v.$rojo;
+    max-height: 100vh;
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: v.$fuentePrincipal;
+    font-size: 1.6rem;
+}
+
+h1,
+p {
+    color: v.$blanco;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 90%;
+    max-width: 37.5rem;
+    margin: 0 auto;
+}
+
+.grid {
+    display: grid;
+    gap: 3rem;
+}
+
+.transition {
+    transition: all 0.5s ease;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 5rem;
+
+    @include m.tablet {
+        margin-top: 0;
+    }
+}
+
+@include m.telefono {
+    body {
+        background: url('/src/images/bg-intro-mobile.png') v.$rojo;
+    }
+}
+
+@include m.tablet {
+    body {
+        background: url('/src/images/bg-intro-desktop.png') v.$rojo;
+    }
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 1040px;
+        align-items: center;
+        padding-top: 4rem;
+    }
+}

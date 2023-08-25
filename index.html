@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="build/css/app.css">
+
+  <title>Frontend Mentor | Intro component with sign up form</title>
+
+</head>
+
+<body>
+  <section class="container grid">
+
+    <main class="container-bienvenida">
+      <h1 class="titulo">
+        Learn to code by watching others
+      </h1>
+      <p class="parrafo">
+        See how experienced developers solve problems in real-time. Watching scripted tutorials is great,
+        but understanding how developers think is invaluable.
+      </p>
+    </main>
+
+
+    <section class="container-form">
+
+      <div class="container-prueba">
+        <p>
+          <span>Try it free 7</span> days then $20/mo. thereafter
+        </p>
+      </div>
+
+      <form action="" class="formulario" id="formulario">
+        <div class="campo">
+          <input class="input" type="text" name="First Name" placeholder="First Name" id="nombre">
+          <span class="icono-error"></span>
+          <span class="icono-check"></span>
+          <span class="mensaje-error"></span>
+        </div>
+        <div class="campo">
+          <input class="input" type="text" name="Last Name" placeholder="Last Name" id="apellido">
+          <span class="icono-error"></span>
+          <span class="icono-check"></span>
+          <span class="mensaje-error"></span>
+        </div>
+        <div class="campo">
+          <input class="input" type="email" name="Email" placeholder="Email Address" id="email">
+          <span class="icono-error"></span>
+          <span class="icono-check"></span>
+          <span class="mensaje-error"></span>
+        </div>
+        <div class="campo">
+          <input class="input" type="password" name="Password" placeholder="Password" id="password">
+          <span class="icono-error"></span>
+          <span class="icono-check"></span>
+          <span class="mensaje-error" id="errorMsg"></span>
+        </div>
+
+        <input class="btn-submit btn" type="submit" value="Claim your free trial">
+        
+
+        
+        <footer class="footer-form">
+          <p>By clicking the button, you are agreeing to our <a href="#">Terms and Services</a></p>
+        </footer>
+      </form>
+
+    </section>
+
+
+
+  </section>
+  <footer class="footer container">
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="https://github.com/adanguerra1990" target="_blank">Adan Guerra</a>.
+    </p>
+  </footer>
+
+  <script src="build/js/app.js"></script>  
+</body>
+
+</html>
