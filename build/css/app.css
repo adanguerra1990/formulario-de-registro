@@ -407,8 +407,9 @@ template {
   }
   .container-bienvenida h1 {
     padding: 0;
-    font-size: 4rem;
-    font-weight: 600;
+    font-size: 5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
   }
   .container-bienvenida p {
     font-size: 1.4rem;
